@@ -23,4 +23,4 @@ To use the application, follow these steps:
 @https://master--profound-pie-09cda6.netlify.app/
 
 # Author 
-Harsh Joshi @joshiharsh0506@gmail.com
+Rajeshwari Mistri
