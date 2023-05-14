@@ -20,7 +20,7 @@ To use the application, follow these steps:
 * Choose a paragraph and start the typing test
 
 # Visit
-@https://master--profound-pie-09cda6.netlify.app/
+@https://amazing-seahorse-6afda6.netlify.app/
 
 # Author 
 Rajeshwari Mistri
