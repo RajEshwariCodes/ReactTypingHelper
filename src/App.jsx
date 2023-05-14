@@ -3,19 +3,23 @@ import "./App.css"
 import TypingFinal from "./Typing/TypingFinal"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./LandingPage"
+import Bubbule from './BAckGrround/Bubbule';
 
 
 function app() {
   return (
     <>
 
+
+
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<TypingFinal/>} />
+          <Route path="/about" element={<TypingFinal />} />
 
         </Routes>
       </BrowserRouter>
+
     </>
   )
 }

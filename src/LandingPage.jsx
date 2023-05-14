@@ -27,6 +27,13 @@ function app() {
                 <div
                     class="max-w-screen-xl m-0 sm:m-20 bg-white shadow sm:rounded-lg flex justify-center flex-1"
                 >
+                    <div style={{background:"lightgreen"}} class="flex-1 bg-darkgreen text-center hidden lg:flex">
+                        <div
+                        
+                            class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
+                            style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/notes-5bb98.appspot.com/o/Typing-pana.png?alt=media&token=aa208464-95d0-44a0-a94c-807df593ac14')" }}
+                        ></div>
+                    </div>
                     <div class="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
 
                         <div class="mt-12 flex flex-col items-center">
@@ -52,7 +59,8 @@ function app() {
                                     />
                                     <button
                                         onClick={handleClick}
-                                        class="mt-5 tracking-wide font-semibold bg-indigo-500 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
+                                        style={{background:"#54AC58"}}
+                                        class="mt-5 tracking-wide font-semibold text-gray-100 w-full py-4 rounded-lg hover:bg-darkgreen-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none"
                                     >
                                         <svg
                                             class="w-6 h-6 -ml-2"
@@ -75,12 +83,7 @@ function app() {
                             </div>
                         </div>
                     </div>
-                    <div class="flex-1 bg-indigo-100 text-center hidden lg:flex">
-                        <div
-                            class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat"
-                            style={{ backgroundImage: "url('https://firebasestorage.googleapis.com/v0/b/notes-5bb98.appspot.com/o/Typing-bro.png?alt=media&token=f75be7d5-0046-465c-b958-d106e67884eb')" }}
-                        ></div>
-                    </div>
+
                 </div>
 
             </div>

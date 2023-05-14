@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import Bubbule from "../BAckGrround/Bubbule";
    
 export default function app() {
   const paragraphOptions = [{ name: "Paragraph 1", text: "The quick brown fox jumps over the lazy dog", }, { name: "Paragraph 2", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", }, { name: "Paragraph 3", text: "It was a dark and stormy night; the rain fell in torrents", }, { name: "Paragraph 4", text: "All happy families are alike; each unhappy family is unhappy in its own way", }, { name: "Paragraph 5", text: "In the beginning God created the heavens and the earth. Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.", },];
@@ -91,13 +92,16 @@ export default function app() {
 
   };
   return (
-    <section style={{ width: "100vw", height: "98vh" }} className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <>
+    <Bubbule />
+
+    <section style={{ width: "100vw", height: "98vh" , }} className="relative isolate overflow-hidden  px-6 py-24 sm:py-32 lg:px-8">
       <div className="border-b border-gray-900/10 pb-12">
 
 
         <div className="border-b border-gray-900/10 pb-12">
           <div className="sm:col-span-3">
-            <p style={{ fontSize: 35, color: "black" }}>Hello {location.state.name} , This is Typing Test</p>
+            <p style={{ fontSize: 35, color: "white" }}>Hello {location.state.name} , This is Typing Test</p>
 
             <div className="mt-2">
               <select
@@ -114,9 +118,9 @@ export default function app() {
               </select>
               <div style={{ display: "flex", height: 100, flexDirection:"column", gap: 50, alignItems: "center", justifyContent: "center" }}>
                 <div style={{ display: "flex", height: 100, gap: 50, alignItems: "center", justifyContent: "center" }}>
-                  <p style={{ fontSize: 35, color: "black" }}>Error Count: {errorCount}</p>
-                  <p style={{ fontSize: 35, color: "black" }}>Speed: {Math.round(typingSpeed)} WPM</p>
-                  <p style={{ fontSize: 35, color: "black" }}>Time remaining: {timeRemaining} Sec</p>
+                  <p style={{ fontSize: 35, color: "white" }}>Error Count: {errorCount}</p>
+                  <p style={{ fontSize: 35, color: "white" }}>Speed: {Math.round(typingSpeed)} WPM</p>
+                  <p style={{ fontSize: 35, color: "white" }}>Time remaining: {timeRemaining} Sec</p>
                 </div>
                 {timeRemaining === 0 || wordIndex === originalParagraph.length ? (
                   <>
@@ -141,10 +145,10 @@ export default function app() {
 
         <figure className="mt-10">
           <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
-            <p>
+            <p style={{color:"grey"}}>
               {originalParagraph.split(" ").map((word, index) => {
                 const isCurrentWord = index === wordIndex;
-                const wordStyle = isCurrentWord ? { fontWeight: "bold" } : {};
+                const wordStyle = isCurrentWord ? { fontWeight: "bold" , color:"white"} : {};
                 return <span style={wordStyle} key={index}>{word} </span>;
               })}
             </p>
@@ -165,5 +169,6 @@ export default function app() {
 
       </div>
     </section>
+    </>
   );
 }
